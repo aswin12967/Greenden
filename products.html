@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!--Tailwind CSS CDN Link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+</head>
+
+<body>
+    <!--Overlay-->
+    <div id="overlay" class="fixed top-0 right-0 z-20"
+        style="background-color: black; height: 100%; width: 100%; opacity: 0.5; display: none;"></div>
+
+    <!-- Responsive Navbar -->
+    <nav class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10 h-20">
+
+        <img src="./images/Greenden.png" class="h-24 w-auto transform transition duration-300 hover:scale-110">
+
+        <svg id="menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden transform transition duration-300 hover:scale-110">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+        </svg>
+        <ul class="flex gap-5 text-black-900 text-xl font-bold hidden md:flex">
+            <li>
+                <a class="hover:text-green-600 transform  transition duration-500 ease-in-out"
+                    href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:text-green-600 transform transition duration-500 ease-in-out"
+                    href="./products.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:text-green-600 transformtransition duration-500 ease-in-out"
+                    href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!--side navbar-->
+
+    <section id="sidenav"
+        class="bg-green-100 fixed z-20 top-0 right-0 border rounded-2xl shadow-xl transition-all duration-500 transform ease-in-out"
+        style="width: 50%; height: 45vh; right: -50%;">
+
+        <div class="text-right mt-8 mr-5">
+            <svg id="closenav"
+                class="inline w-6 h-6 cursor-pointer transition-all duration-500 transform hover:-translate-y-1 hover:text-green-600"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </div>
+
+        <ul class="flex flex-col items-center gap-10 text-black-900 text-xl font-bold mt-5">
+            <li>
+                <a class="hover:text-green-600 transform  transition duration-500 ease-in-out"
+                    href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:text-green-600 transform transition duration-500 ease-in-out"
+                    href="./products.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:text-green-600 transformtransition duration-500 ease-in-out"
+                    href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
+
+    <!--search Box-->
+    <section class="text-center">
+        <h2 class="mt-5 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Our Products
+        </h2>
+
+        <input id="search" class="border border-black p-2 m-3" style="width: 80%;;" type="text"
+            placeholder="Search For A Product">
+    </section>
+
+    <!--Card Image-->
+    <section class="p-4 text-center">
+        <div id="ProductContainer" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div>
+                <img src="./images/Jasmine-pot.png" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Jasmine Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Money-pot.png" class="inline inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Money Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Rose-pot.png" class="inline inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Rose Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Sunshine-pot.png"
+                    class="inline inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Daylily Plant</h1>
+                <p>$20</p>
+            </div>
+
+            <div>
+                <img src="./images/Money-pot.png" class="inline inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1> Green Dashila Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Rose-pot.png" class="inline inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Old Gardern Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Jasmine-pot.png" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Dandelions Plant</h1>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/Sunshine-pot.png"
+                    class="inline inline hover:shadow-2xl transform hover:-translate-y-2">
+                <h1>Sunshine Plant</h1>
+                <p>$20</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="bg-green-100 p-10 flex flex-col gap-5 mt-5">
+        <h1 class="text-4xl font-bold">GREENDEN</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, modi.</p>
+        <p>@ 2021 Greenden.com</p>
+    </section>
+    <script src="./products.js"></script>
+</body>
+
+</html>
